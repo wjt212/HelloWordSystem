@@ -1,0 +1,17 @@
+https://github.com/
+一、配置用户名email
+git config --global use.name "用户名必须和远程服务器一致"
+git config --global use.email "和远程服务器一致"
+检查:git config --global  --list 
+二、配置ssh
+ssh-keygen -t rsa -C "gdutxiaoxu@163.com"
+ssh -T git@github.com 检测是否成功
+git clone 从远程仓库克隆项目
+四、创建版本库
+1、mkdir  文件夹名--创建工作区
+2、cd 文件夹名 --进入文件夹
+3、git init   --创建 版本库  生成一个.git文件
+4、touch 文件名称   --创建文件 编码为utf-8
+5、git status   --检查当前状态  常用
+6、git add 文件名称
+7、git commit -m"解释说明"   将暂存的文件提交到版本库
