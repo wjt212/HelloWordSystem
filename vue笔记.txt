@@ -1,0 +1,63 @@
+脚手架：工地盖楼安装的架子，辅助工人进行楼层的搭建 
+vue-cli 脚手架 是帮助我们编辑一些代码，完成开发的，
+ 他可以帮助我们 
+	1、生成目录结构 
+	2、本地开发调试 
+	3、代码部署 
+	4、热加载 提高开发效率 
+	5、单元测试 测试代码功能
+
+ vue-cli脚手架 帮你提供好基本的项目结构 本身集成了很多模版 simple 没用的模板 webpack 推荐 功能齐全 webpack-simple 基本使用流程 
+	1 npm install vue-cli -g 安装vue命令环境 
+	2 生成项目模版 vue init webpack(模板名称) vue-example(项目名称)
+	3 进入生成的目录中 cnpm install 下载项目依赖模块 
+	4 启动项目 npm run dev
+
+
+vue 是单页面应用 asp
+
+	build 打包配置文件
+	config 项目的配置文件
+	node_modules 项目开发的依赖包
+	src 开发的源代码
+	    assets 放置静态文件     
+	    components 放置组件    .vue
+	    router 放置的路由
+	    App.vue 入口组件
+	    mian.js 入口文件
+	static 放置静态文件
+	
+static与assets区别
+	assets该文件中的静态文件在项目打包的时候,webpack会进行处理
+		assets不需要引入到html
+	static 打包的时候，webpack不会处理该文件中的内容
+
+	static文件的js、css同标签引入到html中
+		三方库 一般都放到该文件下 如swiper插件
+
+package.json 项目依赖文件
+	放置当前项所有的依赖文件
+
+
+数组常用方法
+
+/*
+      filter数组过滤的方法
+      let res = this.arr.filter((item) => {
+      return item > 2
+    }) */
+    // map 映射
+    /* var res = this.arr1.map((item) => {
+      return item >= 60 ? '及格' : '不及格'
+    }) */
+   // every 全部为真则为真 有个为假 则为假
+   /* var res1 = this.arr.every((item) => {
+      return item > 3
+    }) */
+// some 有一个为真 则为真 全部为假 则为假
+let bl = this.arr.some((item) => {
+      return item > 10
+    })
+
+	
+npm install px2rem-loader --save-dev
